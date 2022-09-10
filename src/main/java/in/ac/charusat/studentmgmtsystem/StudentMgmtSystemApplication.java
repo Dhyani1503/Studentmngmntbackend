@@ -1,7 +1,13 @@
-package in.ac.charusat.studentmgmtsystem.repository;
+package in.ac.charusat.studentmgmtsystem;
 
-import in.ac.charusat.studentmgmtsystem.model.Student;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-public interface StudentRepository extends JpaRepository<Student, Integer> {
+@SpringBootApplication
+public class StudentMgmtSystemApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(StudentMgmtSystemApplication.class, args);
+    }
+
 }
